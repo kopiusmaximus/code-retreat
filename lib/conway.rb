@@ -1,4 +1,5 @@
 class World
+  # reader/writer methods?
   def initialize(width, length)
     @cells = []
     @width = width
@@ -8,5 +9,6 @@ end
 
 class Cell
   def initialize
+    @alive = false
   end
 end
