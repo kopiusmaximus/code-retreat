@@ -9,9 +9,11 @@ class World
 
   def populate_board
     width.times do |row|
+      row = []
       length.times do |column|
-        
+        row << Cell.new
       end
+      @cells << row
     end
   end
 end
@@ -20,6 +22,4 @@ class Cell
   def initialize
     @alive = false
   end
-
-
 end
